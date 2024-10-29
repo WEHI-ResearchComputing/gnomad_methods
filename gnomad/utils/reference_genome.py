@@ -99,13 +99,13 @@ def add_reference_sequence(ref: hl.ReferenceGenome) -> hl.ReferenceGenome:
     if not ref.has_sequence():
         if ref.name == "GRCh38":
             ref.add_sequence(
-                "gs://hail-common/references/Homo_sapiens_assembly38.fasta.gz",
-                "gs://hail-common/references/Homo_sapiens_assembly38.fasta.fai",
+                "file:///stornext/System/data/apps/rc-tools/rc-tools-1.0/gnomad-mitochondria-files/Homo_sapiens_assembly38.fasta.gz",
+                "file:///stornext/System/data/apps/rc-tools/rc-tools-1.0/gnomad-mitochondria-files/hail-common/references/Homo_sapiens_assembly38.fasta.fai",
             )
         elif ref.name == "GRCh37":
             ref.add_sequence(
-                "gs://hail-common/references/human_g1k_v37.fasta.gz",
-                "gs://hail-common/references/human_g1k_v37.fasta.fai",
+                "file:///stornext/System/data/apps/rc-tools/rc-tools-1.0/gnomad-mitochondria-files/human_g1k_v37.fasta.gz",
+                "file:///stornext/System/data/apps/rc-tools/rc-tools-1.0/gnomad-mitochondria-files/human_g1k_v37.fasta.fai",
             )
         else:
             raise NotImplementedError(
