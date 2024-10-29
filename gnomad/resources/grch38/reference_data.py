@@ -228,8 +228,8 @@ dbsnp = VersionedTableResource(
             path="gs://gnomad-public-requester-pays/resources/grch38/dbsnp/dbsnp_b156_grch38_all_20221116.ht",
             import_func=_import_dbsnp,
             import_args={
-                "path": "gs://gcp-public-data--gnomad/resources/grch38/dbsnp/dbsnp_b156_grch38_all_GCF_000001405.40_20221116.vcf.bgz",
-                "header_file": "gs://gcp-public-data--gnomad/resources/grch38/dbsnp/dbsnp_b156_grch38_all_GCF_000001405.40_20221116.vcf.header",
+                "path": "file:///stornext/System/data/apps/rc-tools/rc-tools-1.0/gnomad-mitochondria-files//dbsnp_b156_grch38_all_GCF_000001405.40_20221116.vcf.bgz",
+                "header_file": "file:///stornext/System/data/apps/rc-tools/rc-tools-1.0/gnomad-mitochondria-files/dbsnp_b156_grch38_all_GCF_000001405.40_20221116.vcf.header",
                 "force_bgz": True,
                 "contig_recoding": DBSNP_B154_CHR_CONTIG_RECODING,
                 "skip_invalid_loci": True,
@@ -241,8 +241,8 @@ dbsnp = VersionedTableResource(
             path="gs://gnomad-public-requester-pays/resources/grch38/dbsnp/dbsnp_b154_grch38_all_20200514.ht",
             import_func=_import_dbsnp,
             import_args={
-                "path": "gs://gcp-public-data--gnomad/resources/grch38/dbsnp/dbsnp_b154_grch38_all_GCF_000001405.38_20200514.vcf.bgz",
-                "header_file": "gs://gcp-public-data--gnomad/resources/grch38/dbsnp/dbsnp_b154_grch38_all_GCF_000001405.38_20200514.vcf.header",
+                "path": "file:///stornext/System/data/apps/rc-tools/rc-tools-1.0/gnomad-mitochondria-files/dbsnp_b154_grch38_all_GCF_000001405.38_20200514.vcf.bgz",
+                "header_file": "file:///stornext/System/data/apps/rc-tools/rc-tools-1.0/gnomad-mitochondria-files/dbsnp_b154_grch38_all_GCF_000001405.38_20200514.vcf.header",
                 "force_bgz": True,
                 "contig_recoding": DBSNP_B154_CHR_CONTIG_RECODING,
                 "skip_invalid_loci": True,
